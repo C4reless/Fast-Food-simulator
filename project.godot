@@ -11,7 +11,11 @@ config_version=3
 [application]
 
 config/name="Neues Spiel"
+<<<<<<< HEAD
 run/main_scene="res://Node2D.tscn"
+=======
+run/main_scene="res://Pics/Node2D.tscn"
+>>>>>>> 0802230970322fbc86b0df6375a3bca9aa6fc594
 config/icon="res://icon.png"
 
 [rendering]
