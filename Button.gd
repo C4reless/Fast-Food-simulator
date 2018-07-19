@@ -1,10 +1,11 @@
-extends Node2D
+extends Button
 
 # class member variables go here, for example:
 # var a = 2
 # var b = "textvar"
 
 func _ready():
+	# Called when the node is added to the scene for the first time.
 	# Initialization here
 	pass
 
@@ -13,7 +14,6 @@ func _ready():
 #	# Update game logic here.
 #	pass
 
-
 func _on_Button_pressed():
-	#print("abc")
-	get_tree().change_scene("res://map.tscn")
+	
+	get_tree().change_scene("res://Coin.tscn")

@@ -1,8 +1,8 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://Node.gd" type="Script" id=1]
+[ext_resource path="res://Node2D.gd" type="Script" id=1]
 
-[node name="Node" type="Node"]
+[node name="Node2D" type="Node2D"]
 
 script = ExtResource( 1 )
 
@@ -12,10 +12,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 266.0
-margin_top = 100.0
-margin_right = 420.0
-margin_bottom = 122.0
+margin_left = 785.0
+margin_top = 250.0
+margin_right = 797.0
+margin_bottom = 270.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -27,7 +27,6 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-text = "1"
 flat = false
 align = 1
 
@@ -37,10 +36,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 266.0
-margin_top = 149.0
-margin_right = 426.0
-margin_bottom = 169.0
+margin_left = 636.0
+margin_top = 234.0
+margin_right = 648.0
+margin_bottom = 254.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -52,7 +51,6 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-text = "2"
 flat = false
 align = 1
 
@@ -62,10 +60,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 268.0
-margin_top = 191.0
-margin_right = 428.0
-margin_bottom = 211.0
+margin_left = 533.0
+margin_top = 223.0
+margin_right = 545.0
+margin_bottom = 243.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -77,19 +75,66 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-text = "3"
 flat = false
 align = 1
 
-[node name="Label" type="Label" parent="." index="3"]
+[node name="Button4" type="Button" parent="." index="3"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 19.0
+margin_left = 188.0
+margin_top = 216.0
+margin_right = 200.0
+margin_bottom = 236.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+flat = false
+align = 1
+
+[node name="Button5" type="Button" parent="." index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 404.0
+margin_top = 223.0
+margin_right = 416.0
+margin_bottom = 243.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+flat = false
+align = 1
+
+[node name="Label" type="Label" parent="." index="5"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 2.0
 margin_top = 7.0
-margin_right = 59.0
+margin_right = 42.0
 margin_bottom = 21.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -102,16 +147,16 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="Label2" type="Label" parent="." index="4"]
+[node name="Label2" type="Label" parent="." index="6"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 59.0
-margin_top = 8.0
-margin_right = 99.0
-margin_bottom = 22.0
+margin_left = 48.0
+margin_top = 6.0
+margin_right = 88.0
+margin_bottom = 20.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -123,7 +168,7 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="Timer" type="Timer" parent="." index="5"]
+[node name="Timer" type="Timer" parent="." index="7"]
 
 process_mode = 1
 wait_time = 1.0
@@ -135,7 +180,5 @@ autostart = true
 [connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
 
 [connection signal="pressed" from="Button3" to="." method="_on_Button3_pressed"]
-
-[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 
 
