@@ -5,7 +5,7 @@
 [ext_resource path="res://Pics/start button new.png" type="Texture" id=3]
 [ext_resource path="res://Pics/TUT BUTTON NEW.png" type="Texture" id=4]
 
-[node name="Node2D" type="Node2D" index="0"]
+[node name="Node2D" type="Node2D"]
 
 position = Vector2( 0, 1.87396 )
 scale = Vector2( 1, 0.941439 )
