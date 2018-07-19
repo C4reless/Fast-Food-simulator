@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Node2D.gd" type="Script" id=1]
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D" type="Node2D" index="0"]
 
 script = ExtResource( 1 )
 
@@ -12,10 +12,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 785.0
-margin_top = 250.0
-margin_right = 797.0
-margin_bottom = 270.0
+margin_left = 161.0
+margin_top = 162.0
+margin_right = 181.0
+margin_bottom = 182.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -27,6 +27,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
+text = "1"
 flat = false
 align = 1
 
@@ -36,10 +37,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 636.0
-margin_top = 234.0
-margin_right = 648.0
-margin_bottom = 254.0
+margin_left = 204.0
+margin_top = 164.0
+margin_right = 224.0
+margin_bottom = 184.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -51,6 +52,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
+text = "2"
 flat = false
 align = 1
 
@@ -60,10 +62,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 533.0
-margin_top = 223.0
-margin_right = 545.0
-margin_bottom = 243.0
+margin_left = 252.0
+margin_top = 165.0
+margin_right = 272.0
+margin_bottom = 185.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -75,6 +77,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
+text = "3"
 flat = false
 align = 1
 
@@ -84,10 +87,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 188.0
-margin_top = 216.0
-margin_right = 200.0
-margin_bottom = 236.0
+margin_left = 297.0
+margin_top = 167.0
+margin_right = 317.0
+margin_bottom = 187.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -99,6 +102,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
+text = "4"
 flat = false
 align = 1
 
@@ -108,10 +112,10 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 404.0
-margin_top = 223.0
-margin_right = 416.0
-margin_bottom = 243.0
+margin_left = 347.0
+margin_top = 166.0
+margin_right = 367.0
+margin_bottom = 186.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -123,6 +127,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
+text = "5"
 flat = false
 align = 1
 
@@ -147,7 +152,49 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="Label2" type="Label" parent="." index="6"]
+[node name="Label4" type="Label" parent="." index="6"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 357.0
+margin_top = 6.0
+margin_right = 404.0
+margin_bottom = 20.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "kunden"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Label3" type="Label" parent="." index="7"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 416.0
+margin_top = 6.0
+margin_right = 456.0
+margin_bottom = 20.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "0"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Label2" type="Label" parent="." index="8"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -168,7 +215,7 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="Timer" type="Timer" parent="." index="7"]
+[node name="Timer" type="Timer" parent="." index="9"]
 
 process_mode = 1
 wait_time = 1.0
