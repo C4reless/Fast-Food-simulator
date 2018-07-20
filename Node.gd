@@ -19,5 +19,10 @@ func _on_Button2_pressed():
 func _on_Timer_timeout():
 	print ("LOl")
 	pass
+func _on_Back_pressed():
+	get_tree().change_scene("res://restaurant.tscns")
+	pass
+
 func _on_Button3_pressed():
-	get_tree().change_scene("res://gameplay.tscn")
+	get_tree().change_scene("res://restaurant.tscn")
+	pass # replace with function body

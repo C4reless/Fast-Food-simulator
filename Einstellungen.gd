@@ -15,11 +15,12 @@ func _ready():
 #	pass
 
 
-func _on_Zurueck_mouse_entered():
-	get_tree()
-	#pass # replace with function body
-
-
 func _on_Button_pressed():
 	get_tree().quit()
+	pass # replace with function body
+
+
+
+func _on_Zurueck_pressed():
+	get_tree().change_scene("res://restaurant.tscn")
 	pass # replace with function body

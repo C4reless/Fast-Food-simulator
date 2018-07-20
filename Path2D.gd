@@ -24,7 +24,7 @@ func _process(delta):
 		allowedToMove = false
 		global.kunde += 1
 	
-	if global.kunde == 10:
+	if global.kunde == 11:
 		global.kunde = 0
 		get_tree().change_scene("res://Coin.tscn")
 
