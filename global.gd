@@ -4,6 +4,7 @@ extends Node
 # var a = 2
 # var b = "textvar"
 var coin = 0
+var kunde = 0
 
 func _ready():
 	# Called when the node is added to the scene for the first time.
