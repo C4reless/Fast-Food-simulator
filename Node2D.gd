@@ -6,11 +6,11 @@ var KUndenbestellnummmer
 
 var texte = [
 	"xxx",
-	"1Ich bestelle Burger",
-	"2Ich bestelle Pommes",
-	"3",
-	"4",
-	"5",
+	"Ich bestelle Burger",
+	"Ich bestelle Pommes",
+	"Ich bestelle Cola",
+	"Ich bestelle einen Wrap",
+	"Ich bestelle chicken nuggets",
 ]
 # texte[1] ====>>>> 1Ich bestelle Burger
 

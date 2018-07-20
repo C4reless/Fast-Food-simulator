@@ -16,5 +16,10 @@ func _ready():
 
 
 func _on_Zurueck_mouse_entered():
-	print("funktioniere pls")
+	get_tree()
 	#pass # replace with function body
+
+
+func _on_Button_pressed():
+	get_tree().quit()
+	pass # replace with function body
