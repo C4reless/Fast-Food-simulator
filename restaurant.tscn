@@ -1,15 +1,16 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://gameplay.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Pics/der rote typ.png" type="Texture" id=2]
-[ext_resource path="res://Pics/EINSTELLUNGEN BUTTON.png" type="Texture" id=3]
-[ext_resource path="res://Pics/New Piskel.png" type="Texture" id=4]
-[ext_resource path="res://Pics/hocker.png" type="Texture" id=5]
-[ext_resource path="res://Pics/börga transparent.png" type="Texture" id=6]
-[ext_resource path="res://Pics/pommes.png" type="Texture" id=7]
-[ext_resource path="res://Pics/Flasche.png" type="Texture" id=8]
-[ext_resource path="res://Pics/der Wrap.png" type="Texture" id=9]
-[ext_resource path="res://Pics/chicken nuggets box.png" type="Texture" id=10]
+[ext_resource path="res://Pics/börga transparent.png" type="Texture" id=2]
+[ext_resource path="res://Pics/pommes.png" type="Texture" id=3]
+[ext_resource path="res://Pics/Flasche.png" type="Texture" id=4]
+[ext_resource path="res://Pics/der Wrap.png" type="Texture" id=5]
+[ext_resource path="res://Pics/EINSTELLUNGEN BUTTON.png" type="Texture" id=6]
+[ext_resource path="res://Pics/New Piskel.png" type="Texture" id=7]
+[ext_resource path="res://Pics/hocker.png" type="Texture" id=8]
+[ext_resource path="res://Pics/chicken nuggets box.png" type="Texture" id=9]
+[ext_resource path="res://Pics/tresen.png" type="Texture" id=10]
+[ext_resource path="res://Pics/der rote typ.png" type="Texture" id=11]
 
 [node name="Node2D" index="0" instance=ExtResource( 1 )]
 
@@ -17,23 +18,53 @@ position = Vector2( 0, 3.39581 )
 scale = Vector2( 1, 0.988979 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="PathFollow2D" parent="Path2D" index="0"]
+[node name="Button" parent="." index="0"]
 
-rotate = false
+margin_left = 101.0
+margin_top = 113.0
+margin_right = 177.0
+margin_bottom = 183.0
+focus_mode = 0
+text = ""
+icon = ExtResource( 2 )
+flat = true
+_sections_unfolded = [ "Focus" ]
 
-[node name="Sprite" parent="Path2D/PathFollow2D" index="0"]
+[node name="Button2" parent="." index="1"]
 
-position = Vector2( -11.6461, -0.865845 )
-rotation = 1.61139
-scale = Vector2( 0.777538, 0.777538 )
-texture = ExtResource( 2 )
+margin_left = 208.0
+margin_top = 107.0
+margin_right = 284.0
+margin_bottom = 177.0
+focus_mode = 0
+text = ""
+icon = ExtResource( 3 )
+flat = true
+_sections_unfolded = [ "Focus" ]
 
-[node name="Panel" parent="Path2D" index="1"]
+[node name="Button3" parent="." index="2"]
 
-margin_left = 319.0
-margin_top = -336.0
-margin_right = 541.0
-margin_bottom = -240.0
+margin_left = 285.0
+margin_top = 105.0
+margin_right = 361.0
+margin_bottom = 175.0
+focus_mode = 0
+text = ""
+icon = ExtResource( 4 )
+flat = true
+_sections_unfolded = [ "Focus" ]
+
+[node name="Button4" parent="." index="3"]
+
+margin_left = 432.0
+margin_top = 104.0
+margin_right = 518.0
+margin_bottom = 174.0
+focus_mode = 0
+text = ""
+icon = ExtResource( 5 )
+flat = true
+_sections_unfolded = [ "Focus" ]
 
 [node name="Settings" type="Button" parent="." index="4"]
 
@@ -55,7 +86,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 3 )
+icon = ExtResource( 6 )
 flat = true
 align = 1
 __meta__ = {
@@ -67,70 +98,44 @@ __meta__ = {
 position = Vector2( 518.408, 447.211 )
 rotation = -0.000836492
 scale = Vector2( 1.7552, 1.49639 )
-texture = ExtResource( 4 )
+texture = ExtResource( 7 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="hocker2" type="Sprite" parent="." index="6"]
 
 position = Vector2( 644.352, 471.857 )
 rotation = -0.000836492
 scale = Vector2( 0.934957, 0.801359 )
-texture = ExtResource( 5 )
+texture = ExtResource( 8 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="hocker" type="Sprite" parent="." index="7"]
 
 position = Vector2( 405.476, 472.927 )
 rotation = -0.000836492
 scale = Vector2( 0.922308, 0.790516 )
-texture = ExtResource( 5 )
+texture = ExtResource( 8 )
+__meta__ = {
+"_edit_lock_": true
+}
 
-[node name="Button" parent="." index="8"]
+[node name="Button5" parent="." index="8"]
 
-margin_left = 111.0
-margin_top = 166.0
-margin_right = 187.0
-margin_bottom = 236.0
-text = ""
-icon = ExtResource( 6 )
-flat = true
-
-[node name="Button2" parent="." index="9"]
-
-margin_right = 290.0
-margin_bottom = 234.0
-text = ""
-icon = ExtResource( 7 )
-flat = true
-
-[node name="Button3" parent="." index="10"]
-
-margin_left = 310.0
-margin_top = 169.0
-margin_right = 386.0
-margin_bottom = 239.0
-text = ""
-icon = ExtResource( 8 )
-flat = true
-
-[node name="Button4" parent="." index="11"]
-
-margin_left = 407.0
-margin_right = 493.0
-margin_bottom = 237.0
+margin_left = 559.0
+margin_top = 127.0
+margin_right = 635.0
+margin_bottom = 197.0
+focus_mode = 0
 text = ""
 icon = ExtResource( 9 )
 flat = true
+_sections_unfolded = [ "Focus" ]
 
-[node name="Button5" parent="." index="12"]
-
-margin_left = 509.0
-margin_top = 176.0
-margin_right = 585.0
-margin_bottom = 246.0
-text = ""
-icon = ExtResource( 10 )
-flat = true
-
-[node name="Label" parent="." index="13"]
+[node name="Label" parent="." index="9"]
 
 modulate = Color( 0, 0, 0, 1 )
 margin_left = 10.0
@@ -139,22 +144,65 @@ margin_right = 50.0
 margin_bottom = 19.0
 _sections_unfolded = [ "Visibility" ]
 
-[node name="Label4" parent="." index="14"]
+[node name="Label4" parent="." index="10"]
 
 modulate = Color( 0, 0, 0, 1 )
 margin_left = 296.0
 _sections_unfolded = [ "Visibility" ]
 
-[node name="Label3" parent="." index="15"]
+[node name="Label3" parent="." index="11"]
 
 modulate = Color( 0, 0, 0, 1 )
 margin_left = 347.0
 _sections_unfolded = [ "Visibility" ]
 
-[node name="Label2" parent="." index="16"]
+[node name="Sprite" type="Sprite" parent="." index="12"]
+
+position = Vector2( 188.669, 217.882 )
+rotation = -0.000836493
+scale = Vector2( 2.8641, 2.45484 )
+texture = ExtResource( 10 )
+
+[node name="Sprite3" type="Sprite" parent="." index="13"]
+
+position = Vector2( 525.832, 217.097 )
+rotation = -0.000836493
+scale = Vector2( 2.8641, 2.45484 )
+texture = ExtResource( 10 )
+
+[node name="Sprite2" type="Sprite" parent="." index="14"]
+
+position = Vector2( 358.737, 217.958 )
+rotation = -0.000836493
+scale = Vector2( 2.8641, 2.45484 )
+texture = ExtResource( 10 )
+
+[node name="Label2" parent="." index="15"]
 
 modulate = Color( 0, 0, 0, 1 )
 _sections_unfolded = [ "Visibility" ]
+
+[node name="Path2D" parent="." index="19"]
+
+position = Vector2( 241.468, 641.905 )
+
+[node name="PathFollow2D" parent="Path2D" index="0"]
+
+rotate = false
+
+[node name="Sprite" parent="Path2D/PathFollow2D" index="0"]
+
+position = Vector2( -11.6461, -0.865845 )
+rotation = 1.61139
+scale = Vector2( 0.777538, 0.777538 )
+texture = ExtResource( 11 )
+
+[node name="Panel" parent="Path2D" index="1"]
+
+margin_left = 319.0
+margin_top = -336.0
+margin_right = 541.0
+margin_bottom = -240.0
 
 [connection signal="pressed" from="Settings" to="." method="_on_Settings_pressed"]
 
