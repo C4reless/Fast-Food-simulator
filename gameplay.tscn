@@ -1,8 +1,17 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Node2D.gd" type="Script" id=1]
+[ext_resource path="res://Path2D.gd" type="Script" id=2]
+[ext_resource path="res://icon.png" type="Texture" id=3]
 
-[node name="Node2D" type="Node2D"]
+[sub_resource type="Curve2D" id=1]
+
+bake_interval = 5.0
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 1.05481, 1.65222, 0, 0, 0, 0, -9.49658, -329.962, 0, 0, 0, 0, 887.37, -328.455 )
+}
+
+[node name="Node2D" type="Node2D" index="0"]
 
 script = ExtResource( 1 )
 
@@ -222,10 +231,92 @@ wait_time = 1.0
 one_shot = true
 autostart = true
 
+[node name="Timerkunde" type="Timer" parent="." index="10"]
+
+process_mode = 1
+wait_time = 2.0
+one_shot = true
+autostart = true
+
+[node name="Spielbegin" type="Timer" parent="." index="11"]
+
+process_mode = 1
+wait_time = 2.0
+one_shot = true
+autostart = true
+
+[node name="Path2D" type="Path2D" parent="." index="12"]
+
+self_modulate = Color( 0.5, 0.6, 1, 0.7 )
+position = Vector2( 256.247, 642.126 )
+curve = SubResource( 1 )
+script = ExtResource( 2 )
+speed = 200
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D" index="0"]
+
+position = Vector2( 1.05481, 1.65222 )
+rotation = -1.6026
+offset = 0.0
+h_offset = 0.0
+v_offset = 0.0
+rotate = true
+cubic_interp = true
+loop = false
+lookahead = 4.0
+
+[node name="Sprite" type="Sprite" parent="Path2D/PathFollow2D" index="0"]
+
+texture = ExtResource( 3 )
+
+[node name="Panel" type="Panel" parent="Path2D" index="1"]
+
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 319.753
+margin_top = -335.126
+margin_right = 478.753
+margin_bottom = -239.126
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="Label" type="Label" parent="Path2D/Panel" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 162.0
+margin_bottom = 99.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 
 [connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
 
 [connection signal="pressed" from="Button3" to="." method="_on_Button3_pressed"]
+
+[connection signal="pressed" from="Button4" to="." method="_on_Button4_pressed"]
+
+[connection signal="pressed" from="Button5" to="." method="_on_Button5_pressed"]
+
+[connection signal="timeout" from="Timerkunde" to="." method="_on_Timerkunde_timeout"]
+
+[connection signal="timeout" from="Spielbegin" to="Path2D" method="_on_Spielbegin_timeout"]
 
 
