@@ -97,3 +97,8 @@ func _on_Button5_pressed():
 	nK(randomzahl,texte[randomzahl])
 	$Path2D.allowedToMove = true
 	pass # replace with function body
+
+
+func _on_Settings_pressed():
+	get_tree().change_scene("res://einstellungen2.tscn")
+	pass # replace with function body

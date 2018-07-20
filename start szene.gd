@@ -16,9 +16,4 @@ func _ready():
 
 func _on_Button_pressed():
 	#print("abc")
-	get_tree().change_scene("res://map.tscn")
-
-
-func _on_Button2_pressed():
-	get_tree().change_scene(("")
-	pass # replace with function body
+	get_tree().change_scene("res://map2.tscn")

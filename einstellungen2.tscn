@@ -47,4 +47,6 @@ icon = ExtResource( 3 )
 
 [connection signal="pressed" from="einstellungen-screenxdlol/Button" to="." method="_on_Button_pressed"]
 
+[connection signal="pressed" from="einstellungen-screenxdlol/Zurueck" to="." method="_on_Zurueck_pressed"]
+
 
